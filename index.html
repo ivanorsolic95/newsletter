@@ -11,33 +11,68 @@
 </head>
 <body>
 
-  <!-- Sign-up form start -->
+  <main>
 
-  Stay updated!
+    <div class="newsletter-container-large">
 
-  Join 60,000+ product managers receiving monthly updates on:
+      <picture class="picture">
 
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
+        <source media="(min-width: 992px)" srcset="./assets/images/illustration-sign-up-desktop.svg"/>
 
-  Email address
-  email@company.com
+        <source media="(max-width: 991px)" srcset="./assets/images/illustration-sign-up-mobile.svg"/>
 
-  Subscribe to monthly newsletter
+        <img class="illustration" src="./assets/images/illustration-sign-up-mobile.svg" alt="Sign up illustration">
 
-  <!-- Sign-up form end -->
+      </picture>
 
-  <!-- Success message start -->
+      <div class="newsletter-content-large">
 
-  Thanks for subscribing!
+        <div class="newsletter-content">
 
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
+          <h1 class="main-heading">Stay updated!</h1>
 
-  Dismiss message
+          <p class="newsletter-message">Join 60,000+ product managers receiving monthly updates on:</p>
 
-  <!-- Success message end -->
+          <ul class="newsletter-features-list">
+            
+            <li class="newsletter-feature">
+              <img class="list-icon" src="./assets/images/icon-list.svg" alt="List icon">
+              <p class="feature-description">Product discovery and building what matters</p>
+            </li>
+
+            <li class="newsletter-feature">
+              <img class="list-icon" src="./assets/images/icon-list.svg" alt="List icon">
+              <p class="feature-description">Measuring to ensure updates are a success</p>
+            </li>
+
+            <li class="newsletter-feature">
+              <img class="list-icon" src="./assets/images/icon-list.svg" alt="List icon">
+              <p class="feature-description">And much more!</p>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <form class="newsletter-form" id="form" action="/pages/success-message.html">
+          
+          <div class="input-label-container">
+
+            <label class="input-label" for="input">Email address</label>
+            <input name="email" id="email-input" placeholder="email@company.com">
+            <p id="error-message">Valid email required</p>
+
+          </div>
+
+          <button class="subscribe-button">Subscribe to monthly newsletter</button>
+
+        </form>
+
+      </div>
+    
+    </div>
+
+  </main>
   
 </body>
 </html>
