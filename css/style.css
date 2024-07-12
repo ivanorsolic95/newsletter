@@ -1,0 +1,115 @@
+@import url(./colors.css);
+@import url(./fonts.css);
+
+/* reset all margins and paddings to ensure same look of the website across
+different browsers */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-heading, .input-label, .subscribe-button, #error-message {
+    font-family: 'RobotoBold', sans-serif;
+}
+
+.newsletter-message, .feature-description, #email-input {
+    font-family: 'RobotoRegular', sans-serif;
+}
+
+.main-heading, .newsletter-message, .feature-description, .input-label,
+#email-input {
+    color: var(--dark-slate-grey);
+}
+
+.main-heading, .newsletter-message {
+    line-height: var(--display-large);
+}
+
+.feature-description, #email-input, .input-label, .subscribe-button, #error-message {
+    line-height: var(--body-large);
+}
+
+.illustration {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.newsletter-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    
+    /* top | left and right | bottom */
+    padding: 0 1rem 2.5rem;
+}
+
+    .main-heading {
+        font-size: 2.5rem;
+    }
+
+    .newsletter-features-list {
+        display: flex;
+        flex-direction: column;
+
+        /* gap between list elements */
+        gap: 0.625rem;
+    }
+
+        .newsletter-feature {
+            display: flex;
+            flex-direction: row;
+
+            /* gap between list icon and text */
+            gap: 1rem;
+        }
+
+            .list-icon {
+                width: 1.313rem;
+                height: 1.313rem;
+            }
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+
+    /* gap between form elements */
+    gap: 1.5rem;
+
+    /* top | left and right | bottom */
+    padding: 0 1rem 0;
+}
+
+    .input-label-container {
+        display: flex;
+        flex-direction: column;
+
+        /* gap between label and input field */
+        gap: 1rem;
+    }
+
+        #email-input {
+            border: 1px solid rgba(25, 24, 43, 0.25);
+            border-radius: 0.5rem;
+            height: 3.5rem;
+            opacity: 0.5;
+        }
+
+        .input-label {
+            font-size: 0.75rem;
+        }
+    
+    .subscribe-button {
+        height: 3.5rem;
+        background-color: var(--dark-slate-grey);
+        border: 1px solid;
+        border-radius: 0.5rem;
+
+        /* button text color */
+        color: var(--white);
+    }
+
+    /* hide element on screens smaller than 992px */
+    #error-message {
+        display: none;
+    }
+
