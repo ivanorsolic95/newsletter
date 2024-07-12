@@ -90,8 +90,8 @@ different browsers */
         #email-input {
             border: 1px solid rgba(25, 24, 43, 0.25);
             border-radius: 0.5rem;
-            height: 3.5rem;
             opacity: 0.5;
+            padding: 1rem;
         }
 
         .input-label {
