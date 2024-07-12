@@ -1,0 +1,18 @@
+/* Font family */
+@font-face {
+    font-family: 'RobotoBold';
+    src: url("/assets/fonts/Roboto-Bold.ttf") 
+    format('truetype');
+}
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url("/assets/fonts/Roboto-Regular.ttf") 
+    format('truetype');
+}
+
+:root {
+    /* Line height */
+    --display-large: 100%;
+    --body-large: 150%;
+}
