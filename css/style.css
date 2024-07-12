@@ -113,3 +113,76 @@ different browsers */
         display: none;
     }
 
+@media screen and (min-width: 992px) {
+
+    html,body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-color: var(--charcoal-grey);
+    }
+
+    .illustration {
+        width: auto;
+    }
+
+    .newsletter-container-large {
+        width: 58rem;
+        background-color: var(--white);
+        border-radius: 2.25rem;
+        
+        /* Create one row and two columns of equal size */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 2rem;
+        grid-row-gap: 0px; 
+    }
+
+        /* Give two elements of the grid container a position */
+        .newsletter-content-large { grid-area: 1 / 1 / 2 / 2; }
+        .picture { grid-area: 1 / 2 / 2 / 3; } 
+
+        .illustration {
+            padding: 2rem 2rem 0;
+        }
+
+        .main-heading {
+            font-size: 3.5rem;
+        }
+
+        .newsletter-content-large {
+            padding-top: 5.5rem;
+            padding-left: 1.8rem;
+        }
+
+        #email-input:hover {
+            cursor: pointer;
+        }
+
+        .subscribe-button:hover {
+            cursor: pointer;
+
+            /* direction of gradient | first color stop in gradient | second color stop in gradient */
+            background: linear-gradient(204.47deg, #FF6A3A 0%, hsl(4, 100%, 67%) 100%);
+            
+            /* horizontal offset | vertical offset | blur radius | color */
+            box-shadow: 0 1rem 2rem rgba(255, 97, 85, 0.5);   
+        }
+
+        #error-message {
+            font-size: 0.75rem;
+            color: var(--tomato);
+            
+            /*hidden by default */
+            display: none; 
+            
+            
+            text-align: right;
+            
+            /* default position under the input field, use this property to place it
+            above the input field */
+            translate: 0 -600%;
+        }
+}
