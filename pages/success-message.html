@@ -25,6 +25,11 @@
         const userEmail = localStorage.getItem("email");
         document.getElementById("user-email").textContent = userEmail;
 
+        function dismissMessage() {
+            // Optionally clear the email from localStorage if you don't need it anymore
+            localStorage.removeItem("email");
+            window.location.href = "/"; // Redirect to home or another page
+        }
     </script>
 </body>
 </html>
